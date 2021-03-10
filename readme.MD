@@ -10,9 +10,16 @@ Somos uma empresa jovem, funcionamos em ritmo de startup.
 
 Ajudamos o cliente em todas as fases, desde a idealização​ do projeto até a entrega ​em produção.
 
-# Sobre o desafio
+# Resumo do desafio
 
 Criar um sistema que mostre o clima atual e a previsão do tempo a partir do input de uma cidade e/ou localização do usuário.
+
+# Histórias do usuário:
+* Eu como usuário preciso de uma página Web que busque automaticamente a minha localização e me mostre os dados do clima atual
+* Eu como usuário preciso que além do recurso de pegar automaticamente a minha localização no navegador, haja campo texto onde digito o nome de uma cidade para buscar os dados do clima atual
+* Eu como usuário gostaria de poder ver a previsão do tempo para os próximos dias
+* Eu como usuário gostaria de poder acessar a página tanto de um celular quanto de um computador
+* Eu como usuário gostaria que a página apresentasse algum tipo de animação para diferentes tipos de clima, por exemplo uma nuvem cinza quanto o clima estiver nublado
 
 ## Requisitos
 
@@ -25,7 +32,7 @@ Criar um sistema que mostre o clima atual e a previsão do tempo a partir do inp
 ### Frontend
 
 * Exibir os dados recuperados a partir do input do usuário. Por padrão, a previsão do tempo deverá ser baseada na localização atual do usuário.
-* Tecnologia: [Angular](https://angular.io/) (7/8/9/10)
+* Tecnologia: [Angular](https://angular.io/) (>=8)
 
 * Após consultar o clima, mostrar
   * Temperatura atual.
@@ -33,13 +40,20 @@ Criar um sistema que mostre o clima atual e a previsão do tempo a partir do inp
   * Clima (chovendo, nublado, ensolarado, etc).
   * Indicativo visual para mostrar o status do clima.
 
+### Documentação
+
+* Criar um README explicando um pouco das tecnologias usadas tanto no frontend quanto no backend
+  * Um dev deve conseguir subir o seu projeto a partir do seu README
+  * Para as APIs, sugerimos utilizar o SWAGGER
+
+
 ### Prazo
 
 O prazo máximo para a entrega do teste será de **5 dias corridos** após o envio destas instruções.
 
 ## Forma de Entrega
 
-Faça um repositório em alguma plataforma de controle de versionamento ([github](https://github.com), [gitlab](https://about.gitlab.com/), [bitbucket](https://bitbucket.org/), etc) contendo o projeto e nos mande o link, notificando que a solução está entregue.
+Faça um repositório em alguma plataforma de controle de versão ([github](https://github.com), [gitlab](https://about.gitlab.com/), [bitbucket](https://bitbucket.org/), etc) contendo o projeto e nos mande o link notificando que a solução está entregue.
 
 ## Pontos extras que podem fazer a diferença
 
@@ -47,6 +61,17 @@ Faça um repositório em alguma plataforma de controle de versionamento ([github
 * Testes unitários e integrados.
 * Clean Code.
 * Previsão do tempo para X dias.
+
+
+## **Detalhes que farão diferença para DEVS Plenos**
+
+* Utilizar o docker ou docker-compose para subir os projeto
+  * Subir Backend
+  * Subir Frontend
+* Utilizar ferramentas de cache
+  * Pode ser cache no próprio código ou algum banco de cache, por exemplo REDIS
+* Realizar testes unitários e integrados nos sistemas
+* Tratar erros no front caso haja falha de comunicação com o backend
 
 ## FAQ
 
@@ -56,7 +81,7 @@ Sim.
 
 > Por que um Backend para consultar uma API externa?
 
- De modo geral, é mais interessante, pois, te dá mais controle e simplifica o consumo de vários clientes, exemplo: imagine que você tem vários consumidores requisitando essas API, um consumidor Web, um Android e um IOS. Caso você precise trocar a API que provém dados de clima, esta mudança será somente no back-end e não nos clientes que a consomem. Além disso, queremos saber também se você pode lidar com uma API que consome uma ou várias APIs.
+ De modo geral, é mais interessante, pois, te dá mais controle e simplifica o consumo de vários clientes, exemplo: imagine que você tem vários consumidores requisitando essas API, um consumidor Web, um Android e um IOS. Caso você precise trocar a API que provém dados de clima, esta mudança será somente no backend e não nos clientes que a consomem. Além disso, queremos saber também se você pode lidar com uma API que consome uma ou várias APIs.
 
 > E se o prazo estourar?
 
